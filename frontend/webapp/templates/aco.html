@@ -1,0 +1,77 @@
+{% extends "page.html" %}
+{% load static %}
+
+{% block title %}Linha de Aerossol em Aço{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/aco-v5.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="banner-section">
+  <div class="banner-content">
+    <div class="container">
+      <div class="banner-title">
+        Linha de Aerossol em Aço
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="chamada-section">
+  <div class="container">
+    <div class="col-sm-12 col-md-12">
+      <div class="chamada-title">
+        Cosméticos, saneantes, <br class="visible-gt-767" />
+        produtos industriais, <br class="visible-gt-767" />
+        automotivos, veterinários, <br class="visible-gt-767" />
+        entre outros.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="colunas-section">
+  <div class="container">
+    <div class="col-sm-12 col-md-6">
+      <div class="colunas-coluna-left">
+        <p>
+          As linhas de aerossol de aço da ZEMPACK são as mais modernas
+          do mundo com foco em produtividade, qualidade e
+          sustentabilidade. <br />
+          <br />
+          Garantindo assim a satisfação dos clientes e o compromisso
+          com o meio ambiente.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="colunas-coluna-right">
+        <div class="colunas-imagem">
+          <img src="{% static 'img/aco/imagem1.png'%}" class="imagem1">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-12">
+    </div>
+
+    <div class="col-sm-12 col-md-6">
+      <div class="colunas-coluna-left">
+        <div class="colunas-especificacao">
+          <img src="{% static 'img/aco/especificacao.png'%}">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="colunas-coluna-right2">
+        <div class="colunas-imagem">
+          <img src="{% static 'img/aco/imagem3.png'%}"  class="imagem3">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

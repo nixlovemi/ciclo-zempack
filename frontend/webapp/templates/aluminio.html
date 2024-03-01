@@ -1,0 +1,92 @@
+{% extends "page.html" %}
+{% load static %}
+
+{% block title %}Linha de Aerossol em Alumínio{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/aluminio-v3.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="banner-section">
+  <div class="banner-content">
+    <div class="container">
+      <div class="banner-title">
+        Linha de Aerossol em Alumínio
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="chamada-section">
+  <div class="container">
+    <div class="col-sm-12 col-md-12">
+      <div class="chamada-title">
+        Beleza e higiene <br class="visible-gt-767" />
+        pessoal, cuidado <br class="visible-gt-767" />
+        domiciliar, produtos <br class="visible-gt-767" />
+        farmacêuticos, <br class="visible-gt-767" />
+        entre outros.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="colunas-section">
+  <div class="container">
+    <div class="col-sm-12 col-md-6">
+      <div class="colunas-coluna-left">
+        <p>
+          Infinitamente reciclável, o alumínio garante todo o potencial da
+          embalagem de metal para transmitir sensações incomparáveis
+          ao seu produto. Embalagens sustentáveis e de alta qualidade,
+          resistentes à ferrugem, extremamente leves que se adequam a
+          diversos produtos como:
+        </p>
+        <ul>
+          <li>Antissépticos;</li>
+          <li>Aromatizantes/Odorizadores de ambientes;</li>
+          <li>Desodorantes;</li>
+          <li>Gel para barbear;</li>
+          <li>Protetor solar;</li>
+          <li>Sprays para cabelo e penteados;</li>
+          <li>Sprays para o corpo.</li>
+        </ul>
+        <p>
+          <strong>Para designs impressionantes e sofisticados, confie na
+            nossa impressão offset de alta definição.
+          </strong><br/>
+          Com a capacidade de imprimir até 9 cores, esse método de
+          impressão oferece excepcional qualidade de reprodução de cores,
+          a um custo mais acessível do que a impressão offset tradicional. <br/>
+          Nossos sofisticados processos e sistemas de impressão em linha
+          garantem que os designs e suas cores sejam sempre
+          perfeitos. Cada membro da ZEMPACK trabalha constantemente
+          com foco na excelência, para oferecer opções de alumínio que
+          favoreçam o design e a nitidez gráfica da embalagem do cliente.
+          <strong>Uma das linhas mais modernas do mundo.</strong>
+        </p>
+        <div class="colunas-especificacao">
+          &nbsp;<br>
+          <img src="{% static 'img/aluminio/especificacao.png'%}">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="colunas-coluna-right">
+        <div class="colunas-imagem">
+          <img src="{% static 'img/aluminio/imagem1.png'%}">
+        </div>
+        <div class="colunas-imagem">
+          <img src="{% static 'img/aluminio/imagem2.png'%}">
+        </div>
+        <div class="colunas-imagem">
+          <img src="{% static 'img/aluminio/detalhe.png'%}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

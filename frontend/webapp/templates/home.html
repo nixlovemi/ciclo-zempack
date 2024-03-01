@@ -1,0 +1,255 @@
+{% extends "page.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/home-v7.css' %}">
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'fslightbox/fslightbox.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="banner-section banner-size">
+  <div id="carousel-banner" class="banner-content carousel slide banner-size" data-ride="carousel">
+    <div class="carousel-indicators banner-indicators visible-gt-767">
+      <img src="{% static 'img/left.png'%}" width="18px" height="32px" data-target="#carousel-banner" data-slide="prev" class="arrow arrow-left">
+      <img src="{% static 'img/right.png'%}" width="18px" height="32px" data-target="#carousel-banner" data-slide="next" class="arrow arrow-right">
+    </div>
+    <div class="carousel-inner banner-size">
+      <div class="active item banner-size">
+        <div class="banner1-bg banner-size">
+          <div class="container">
+            <div class="banner-texts">
+              <div class="banner-title banner-title-home banner-title-home1">
+                <strong>Embalagens Metálicas</strong> <br class="visible-gt-767" />
+                Para aerossol e produtos <br class="visible-gt-767" />
+                Alimentícios!
+              </div>
+              <div class="banner-sub-title visible-gt-767">
+                A ZEMPACK é uma das maiores produtoras do segmento na <br class="visible-gt-1199" />
+                América Latina com capacidade de fornecimento de mais <br class="visible-gt-1199" />
+                de 1 bilhão de embalagens por ano.
+              </div>
+              <div class="banner-button-line" onclick="location.href='{{ base_path }}/nosso-negocio';" style="cursor: pointer;">
+                <div class="banner-button">
+                  Ver mais &nbsp;
+                  <img src="{% static 'img/right-white.png' %}" width="9px" height="16px" alt="Link">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item banner-size">
+        <div class="banner2-bg banner-size">
+          <div class="container">
+            <div class="banner-texts">
+              <div class="banner-title banner-title-home banner-title-home1">
+                <br class="visible-lt-767" />
+                Conheça o<br />
+                <strong>Nosso</strong><br />
+                <strong>Manifesto</strong>
+              </div>
+              <div class="banner-button-line">
+                <div class="banner-button">
+                  <a data-fslightbox="gallery2"
+                  href="{% static 'video/manifesto-v1.mp4'%}">
+                    Clique e assista &nbsp;
+                    <img src="{% static 'img/right-white.png' %}" width="9px" height="16px" alt="Link">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item banner-size">
+        <div class="banner3-bg banner-size">
+          <div class="container">
+            <div class="banner-texts">
+              <div class="banner-title banner-title-home banner-title-home1">
+                <br class="visible-lt-767" />
+                Conheça o <br class="visible-lt-767" /> fundo <br />
+                <strong>JBS PELA <br class="visible-lt-767" /> AMAZÔNIA</strong>
+              </div>
+              <div class="banner-sub-title2 visible-gt-767">
+                Dedicado a fomentar e financiar iniciativas e projetos que visam
+                o desenvolvimento sustentável do Bioma Amazônico, promovendo
+                a conservação e o uso sustentável da floresta, melhoria da qualidade
+                de vida da população da região e desenvolvimento com uso
+                de tecnologia e ciência aplicada.
+              </div>
+              <div class="banner-button-line" onclick="location.href='{{ base_path }}/sustentabilidade';" style="cursor: pointer;">
+                <div class="banner-button">
+                 Ver mais &nbsp;
+                  <img src="{% static 'img/right-white.png' %}" width="9px" height="16px" alt="Link">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item banner-size">
+        <div class="banner4-bg banner-size">
+          <div class="container">
+            <div class="banner-texts">
+              <div class="banner-title banner-title-home banner-title-home4">
+                Compromisso Global <br  />
+                <strong>A JBS <br class="visible-lt-767" /> se compromete</strong> <br />
+                <strong>A ser NET ZERO <br class="visible-lt-767" /> até 2040!</strong>
+              </div>
+              <div class="banner-sub-title2 visible-gt-767">
+                O aquecimento global é um dos maiores desafios da história da humanidade.
+                Como uma das principais produtoras mundiais de alimentos, a JBS assume o compromisso
+                de fazer parte da mudança, tornando-se Net Zero até 2040. Seguiremos com nosso
+                propósito de alimentar pessoas em todo o mundo com o que há de melhor, de maneira
+                cada vez mais sustentável, preservando os recursos do planeta para as futuras gerações.
+              </div>
+              <div class="banner-button-line" onclick="location.href='{{ base_path }}/sustentabilidade';" style="cursor: pointer;">
+                <div class="banner-button">
+                 Ver mais &nbsp;
+                  <img src="{% static 'img/right-white.png' %}" width="9px" height="16px" alt="Link">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="chamadas-section">
+  <div class="container">
+    <div class="col-md-3 col-sm-6">
+      <div class="chamadas-item-col chamada-1">
+        <div class="chamadas-item-titulo">
+          Integração Total <br class="visible-gt-767" />
+          dos processos
+        </div>
+        <div class="chamadas-item-separator"></div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="chamadas-item-col chamada-2">
+        <div class="chamadas-item-titulo">
+          Infraestrutura <br class="visible-gt-767" />
+          e tecnologia
+        </div>
+        <div class="chamadas-item-separator"></div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="chamadas-item-col chamada-3">
+        <div class="chamadas-item-titulo">
+          <br class="visible-lt-767" />
+          Qualidade
+          <br class="visible-gt-767" />
+          &nbsp;
+        </div>
+        <div class="chamadas-item-separator"></div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="chamadas-item-col chamada-4">
+        <div class="chamadas-item-titulo">
+          <br class="visible-lt-767" />
+          Sustentabilidade
+          <br class="visible-gt-767" />
+          &nbsp;
+        </div>
+        <div class="chamadas-item-separator"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="produto-section">
+  <div class="container">
+    <div class="col-sm-12 col-md-6 produto-text-1 produto-text-zindex">
+      <div class="produto-text-col">
+        <div class="produto-title">
+          <span style="font-weight: 100;">Linha de</span><br >
+          Aerossol em Alumínio
+        </div>
+        <div class="produto-text">
+          Beleza e higiene pessoal, cuidado domiciliar, <br class="visible-gt-767" />
+          produtos farmacêuticos, entre outros.
+        </div>
+        <div class="produto-button-line">
+          <div class="produto-button" onclick="location.href='{{ base_path }}/aerossol-aluminio';" style="cursor: pointer;">
+            Ver mais &nbsp;
+            <img src="{% static 'img/right-white.png' %}" width="9px" height="16px" alt="Link">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="produto-image-col produto-1">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="produto-section">
+  <div class="container">
+    <div class="col-sm-12 col-md-6 produto-text-2 produto-text-zindex">
+      <div class="produto-text-col">
+        <div class="produto-title">
+          <span style="font-weight: 100;">Linha de</span><br >
+          Aerossol em Aço
+        </div>
+        <div class="produto-text">
+          Cosméticos, saneantes, veterinários, <br class="visible-gt-767" />
+          produtos industriais e automotivos, entre outros.
+        </div>
+        <div class="produto-button-line">
+          <div class="produto-button" onclick="location.href='{{ base_path }}/aerossol-aco';" style="cursor: pointer;">
+            Ver mais &nbsp;
+            <img src="{% static 'img/right-white.png' %}" width="9px" height="16px" alt="Link">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="produto-image-col produto-2"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="produto-section">
+  <div class="container">
+    <div class="col-sm-12 col-md-6 produto-text-3 produto-text-zindex">
+      <div class="produto-text-col">
+        <div class="produto-title">
+          <span style="font-weight: 100;">Linha</span><br >
+          Alimentícia
+        </div>
+        <div class="produto-text">
+          Produtos cárneos, vegetais, atomatados, cafés, <br class="visible-gt-767" />
+          lácteos, compotas, ração animal, entre outros.
+        </div>
+        <div class="produto-button-line">
+          <div class="produto-button" onclick="location.href='{{ base_path }}/linha-alimenticia';" style="cursor: pointer;">
+            Ver mais &nbsp;
+            <img src="{% static 'img/right-white.png' %}" width="9px" height="16px" alt="Link">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="produto-image-col produto-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="produto-section">
+</div>
+
+{% endblock %}

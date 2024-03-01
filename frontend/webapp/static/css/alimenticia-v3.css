@@ -1,0 +1,114 @@
+/* banner */
+.banner-section {
+  background-image: url("../img/alimenticia/banner.jpg");
+  background-size: 100%;
+  height: 23vw;
+}
+
+.banner-title {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #565655;
+  border-left: 4px solid #d00910;
+  padding-left: 47px;
+  line-height: 160%;
+  padding-top: 0px;
+}
+
+@media (max-width: 1199px) {
+  .banner-section {
+    background-size: 125%;
+    height: 28vw;
+  }
+  .banner-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-section {
+    background-size: 125%;
+    height: 28vw;
+  }
+  .banner-title {
+    font-size: 20px;
+  }
+}
+
+/* chamada */
+.chamada-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.chamada-title {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #565655;
+  background-image: url(../img/white-detail.png);
+  background-color: #ededed;
+  background-position-x: left;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+  .chamada-title {
+    font-size: 38px;
+  }
+}
+
+/* colunas */
+.colunas-section {
+  padding-bottom: 60px;
+}
+
+.colunas-coluna-left {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.colunas-coluna-left > p {
+  font-family: 'AmsiProCond';
+  font-size: 17px;
+  line-height: 160%;
+}
+
+.colunas-especificacao > img {
+  width: 100%;
+}
+
+.colunas-coluna-right {
+  margin-top: -260px;
+}
+
+.colunas-imagem {
+  padding-bottom: 30px;
+}
+
+.colunas-imagem > img {
+  width: 90%;
+}
+
+@media (max-width: 991px) {
+  .colunas-coluna-right {
+    margin-top: 0px;
+  }
+  .colunas-imagem > img {
+    width: 100%;
+  }
+  .colunas-coluna-left {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .colunas-especificacao > img {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}

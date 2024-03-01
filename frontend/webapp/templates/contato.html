@@ -1,0 +1,147 @@
+{% extends "page.html" %}
+{% load static %}
+
+{% block title %}Contato{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/contato-v4.css' %}">
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/contato-v1.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="banner-section">
+  <div class="banner-content">
+    <div class="container">
+      <div class="banner-title">
+        Contato
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contato-section-spacer">
+</div>
+
+<div class="contato-section">
+  <div class="container">
+    <div class="contato-form col-md-8 col-sm-12 col-xs-12">
+      <div class="contato-form-title">
+        Contato
+      </div>
+      <div class="contato-form-text">
+        Para dúvidas, críticas ou sugestões, entre em contato conosco.
+      </div>
+      <input type="text" id="nome" name="nome" placeholder="NOME COMPLETO"></input> <br />
+      <input type="text" id="email" name="email" placeholder="EMAIL"></input> <br />
+      <input type="text" id="telefone" name="telefone" placeholder="TELEFONE"></input> <br />
+      <textarea rows="6" id="mensagem" name="mensagem" placeholder="MENSAGEM - Não informar dados pessoais neste campo"></textarea>  <br />
+      <input type="checkbox" id="privacidade-check" name="privacidade-check" class="contato-form-checkbox">
+      </input>
+      <span class="contato-form-checkbox-text">LI E ACEITO A <a href="/politica-de-privacidade" class="contato-form-link" target="_blank" rel="noopener">POLÍTICA DE PRIVACIDADE </a> DA ZEMPACK.</span>
+      <br/>
+      <div class="contato-enviar-linha">
+        <div class="contato-enviar" id="contato-enviar" style="cursor: pointer;">
+          Enviar
+        </div>
+      </div>
+    </div>
+    <div class="contato-text col-md-4 col-sm-12">
+      <div class="contato-text-padding visible-lt-767">
+        &nbsp;
+      </div>
+      <div class="contato-text-title">
+        Para mais informações:
+      </div>
+      <div class="contato-text-phone">
+        +55 11 <span class="contato-text-phone-big">3144-4243</span>
+      </div>
+      <div class="contato-text-email">
+        <a href="mailto:contato@zempack.com.br"><strong>CONTATO@ZEMPACK.COM.BR</strong></a>
+        <br />
+        &nbsp;
+        <br />
+        <!--<a href="https://www.linkedin.com/company/zempack/" target="_blank" rel="noopener">
+          <img src="{% static 'img/linkedin.png' %}"></a>
+        </a>-->
+      </div>
+      <div class="contato-text-mapa">
+        <img src="{% static 'img/contato/mapa.png' %}"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="chamada-section visible-gt-767">
+  <div class="container">
+    <div class="col-sm-12 col-md-12">
+      <div class="chamada-title">
+        Faça parte <br class="visible-gt-767" />
+        do time!
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="colunas-section visible-gt-767">
+  <div class="container">
+    <div class="col-sm-12 col-md-6">
+      <div class="colunas-coluna-left">
+        <p>
+          Confira as oportunidades de trabalho nas unidades de negócio da JBS!
+        </p>
+        <p>
+          <a href="https://trabalheconosco.vagas.com.br/jbs" target="_blank" rel="noopener">
+            <img src="{% static 'img/contato/vagas.png'%}" width="120px">
+          </a>
+        </p>
+        <p>
+          Se preferir, envie seu currículo para o e-mail
+          <a href="mailto:recrutamento@zempack.com.br"><strong>recrutamento@zempack.com.br</strong></a>
+          e assim que surgir novas oportunidades entraremos em contato com você.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="colunas-coluna-right">
+        <div class="colunas-imagem">
+          <img src="{% static 'img/contato/funcionaria.png'%}" class="imagem1">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="send-section visible-lt-767">
+  <div class="container">
+    <div class="col-sm-12 col-md-12">
+      <div class="send-title">
+        Faça parte <br />
+        do time JBS!
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12">
+      <div class="send-text">
+        Envie seu currículo para o e-mail
+        <a href="mailto:recrutamento@zempack.com.br"><strong>recrutamento@zempack.com.br</strong></a>
+        e assim que surgir novas oportunidades entraremos em contato com você.
+        &nbsp;<br />&nbsp;<br />
+        <div class="send-luck">
+          Boa Sorte!
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="colunas-coluna-right">
+        <div class="colunas-imagem">
+          <img src="{% static 'img/contato/funcionaria-mobile.png'%}" class="imagem1">
+        </div>
+      </div>
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,117 @@
+{% extends "page.html" %}
+{% load static %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block meta %}
+<meta property="og:url"           content="https://www.zempack.com.br/news/{{ post.slug }}" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="ZEMPACK | {{ post.title }}" />
+<meta property="og:description"   content="{{ post.sub_title }}" />
+<meta property="og:image"         content="{{ post.header_image.url }}" />
+{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/news-v2.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="banner-section">
+  <div class="banner-content">
+    <div class="container">
+      <div class="banner-title">
+        Notícias
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- title -->
+<div class="title-section">
+  <div class="container">
+    <div class="col-sm-12 col-md-12">
+      <div class="title-title">
+        <div class="title-title-text">
+          {{ post.title }}
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12">
+      <div class="title-image">
+        <div class="title-image-image">
+          <img src="{{ post.header_image.url }}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- body -->
+<div class="body-section">
+  <div class="container">
+    <div class="body-text col-md-12 col-sm-12 col-xs-12">
+      <div class="body-text-text">
+        {{ post.content|safe }}
+      </div>
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <br />
+      <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.0";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <!-- Your share button code -->
+      <div class="fb-share-button"
+        data-href="https://www.zempack.com.br/news/{{ post.slug }}"
+        data-layout="button">
+      </div>
+      &nbsp; &nbsp;
+      <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: pt_BR</script>
+      <script type="IN/Share" data-url="https://www.zempack.com.br/news/{{ post.slug }}"></script>
+    </div>
+  </div>
+</div>
+
+<!-- more -->
+
+{% for other_post in other_posts %}
+
+<div class="more-section">
+  <div class="container">
+    <div class="col-sm-12 col-md-12">
+      <div class="title-title">
+        <div class="title-title-text">
+          {{ other_post.title }}
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="more-subtitle">
+        <div class="more-subtitle-text">
+          {{ other_post.sub_title }}
+        </div>
+      </div>
+      <div class="more-button-line" onclick="location.href='{{ base_path }}/news/{{ other_post.slug }}';" style="cursor: pointer;">
+        <div class="more-button">
+          Ver mais &nbsp;
+          <img src="{% static 'img/right-white.png' %}" width="9px" height="16px" alt="Link">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 visible-gt-991">
+      <div class="more-image">
+        <div class="more-image-image">
+          <img src="{{ other_post.header_image.url }}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+
+{% endblock %}

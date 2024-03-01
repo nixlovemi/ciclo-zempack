@@ -1,0 +1,182 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>ZEMPACK | {% block title %}{% endblock %}</title>
+  <meta name="description" content="ZEMPACK Embalagens Metálicas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16">
+  <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/fonts-v1.css' %}">
+  <link rel="stylesheet" href="{% static 'css/page-v2.css' %}">
+  {% block stylesheet %}{% endblock %}
+  <meta name="theme-color" content="#fafafa">
+  {% block meta %}{% endblock %}
+  <!-- OneTrust -->
+  <script type="text/javascript" src="https://cdn.cookielaw.org/consent/5bba5ce9-5318-461b-9c29-81485ff9fc0c/OtAutoBlock.js">
+  </script>
+  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript"
+  charset="UTF-8" data-domain-script="5bba5ce9-5318-461b-9c29-81485ff9fc0c">
+  </script>
+  <script type="text/javascript">
+  function OptanonWrapper() { }
+  </script>
+  <!-- End OneTrust -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PFKC2PW');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- header -->
+  <div class="header-area">
+    <header class="navbar container" id="navbar" role="banner">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar-collapse" class="navbar-collapse collapse">
+        <div class="region region-navigation-collapsible">
+          <div class="logo-box">
+            <img src="{% static 'img/logo.png'%}" alt="ZEMPACK" />
+          </div>
+          <nav role="navigation" id="block-main-menu">
+            <ul class="menu nav navbar-nav">
+              <li class="expanded dropdown">
+                <a href="/">Home</a>
+              </li>
+              <li class="expanded dropdown">
+                <a href="/nosso-negocio">Nosso Negócio</a>
+              </li>
+              <li class="expanded dropdown visible-gt-767">
+                <a style="cursor: pointer;">Produtos</a>
+                <ul class="dropdown-menu">
+                  <li><a href="/aerossol-aco">LINHA DE AEROSSOL EM AÇO</a></li>
+                  <li><a href="/aerossol-aluminio">LINHA DE AEROSSOL EM ALUMÍNIO</a></li>
+                  <li><a href="/linha-alimenticia">LINHA ALIMENTÍCIA</a></li>
+                </ul>
+              </li>
+              <li class="expanded dropdown visible-lt-767">
+                <a href="/aerossol-aco">Linha de Aerossol em Aço</a>
+              </li>
+              <li class="expanded dropdown visible-lt-767">
+                <a href="/aerossol-aluminio">Linha de Aerossol em Alumínio</a>
+              </li>
+              <li class="expanded dropdown visible-lt-767">
+                <a href="/linha-alimenticia">Linha alimentícia</a>
+              </li>
+              <li class="expanded dropdown">
+                <a href="/sustentabilidade">Sustentabilidade</a>
+              </li>
+              <li class="expanded dropdown">
+                <a href="/news">News</a>
+              </li>
+              <li class="expanded dropdown visible-gt-767">
+                <a href="/contato">Contato</a>
+                <ul class="dropdown-menu">
+                  <li><a href="/contato">FAÇA PARTE DO TIME!</a></li>
+                </ul>
+              </li>
+              <li class="expanded dropdown visible-lt-767">
+                <a href="/contato">Contato</a>
+              </li>
+              <li class="expanded dropdown visible-gt-767">
+                <!--<div class="linkedin">
+                  <a href="https://www.linkedin.com/company/zempack/" target="_blank" rel="noopener">
+                    <img src="{% static 'img/linkedin.png' %}"></a>
+                  </a>
+                </div>-->
+              </li>
+              <li class="expanded dropdown visible-gt-767">
+                <div class="negocio-jbs">
+                  <img src="{% static 'img/negocio-jbs.png' %}"></a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="body-area">
+    {% block content %}{% endblock %}
+    <!-- footer -->
+    <div class="footer-section">
+      <div class="container">
+        <div class="footer-col-logo col-md-3 col-sm-6 visible-gt-991">
+          <div class="footer-logo">
+            <img src="{% static 'img/logo-footer.png' %}" width="200px" height="42px" alt="ZEMPACK">
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-col-content">
+            <div class="footer-title">Localização:</div>
+            <div class="footer-item">Barretos/SP</div>
+            <div class="footer-item">Lins/SP</div>
+            <div class="footer-item">Guaiçara/SP</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-col-content">
+            <div class="footer-title">Para mais informações:</div>
+            <div class="footer-title">+55 11 3144-4243</div>
+            <div class="footer-item">
+              <a href="mailto:contato@zempack.com.br">contato@zempack.com.br</a>
+            </div>
+            </div>
+          </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-col-content">
+            <div class="footer-title">Mapa do site:</div>
+            <div class="footer-item"><a href="/">Home</a></div>
+            <div class="footer-item"><a href="/nosso-negocio">Nosso Negócio</a></div>
+            <div class="footer-item"><a href="/sustentabilidade">Sustentabilidade</a></div>
+            <div class="footer-item"><a href="/news">News</a></div>
+            <div class="footer-item"><a href="/contato">Contato</a></div>
+            <div class="footer-item"><a class="ot-sdk-show-settings footer-item" style="cursor: pointer;">Defini&ccedil;&otilde;es de Cookies</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- trailing -->
+    <div class="trailing-section">
+      <div class="container">
+        <div class="unidade-jbs col-md-12 col-sm-12">
+          <img src="{% static 'img/unidade-jbs.png' %}" width="250px" alt="Uma unidade de negócios JBS">
+        </div>
+        <div class="copyright-separator col-md-12 col-sm-12">
+        </div>
+        <div class="copyright col-md-12 col-sm-12">
+          <p>
+            &copy; JBS 2021 - Todos os direitos reservados | <a href="/politica-privacidade" target="_blank" rel="noopener">Termos e condições - Política de Privacidade</a>
+            <br /> <br />
+            <a href="http://www.ciclocomunicacao.com.br/" target="_blank" rel="noopener"><img src="{% static 'img/ciclo.png' %}" width="40px" alt="Visitar site da Agência Ciclo"></a>
+            <br /> <br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <script>
+    $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
+  {% block script %}{% endblock %}
+</body>
+</html>

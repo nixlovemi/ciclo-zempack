@@ -1,0 +1,71 @@
+{% extends "page.html" %}
+{% load static %}
+
+{% block title %}Linha Alimentícia{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/alimenticia-v3.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="banner-section">
+  <div class="banner-content">
+    <div class="container">
+      <div class="banner-title">
+        Linha Alimentícia
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="chamada-section">
+  <div class="container">
+    <div class="col-sm-12 col-md-12">
+      <div class="chamada-title">
+        Produtos Cárneos, <br class="visible-gt-767" />
+        vegetais, atomatados, <br class="visible-gt-767" />
+        cafés, lácteos, <br class="visible-gt-767" />
+        compotas, ração <br class="visible-gt-767" />
+        animal, entre outros.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="colunas-section">
+  <div class="container">
+    <div class="col-sm-12 col-md-6">
+      <div class="colunas-coluna-left">
+        <p>
+          A lata de aço destaca-se por ser biodegradável, 100% reciclável
+          e dispensar conservantes ou aditivos químicos, garantindo
+          que o produto mantenha suas propriedades naturais inalteradas. <br />
+          É leve, prática, versátil, resistente e protege os alimentos de
+          micro-organismos e de qualquer agente externo, mesmo em
+          condições adversas ao clima, transporte e manuseio desde
+          a fabricação até o momento de sua abertura.
+          <br /> &nbsp;
+        </p>
+        <div class="colunas-especificacao">
+          <img src="{% static 'img/alimenticia/especificacao.png'%}">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="colunas-coluna-right">
+        <div class="colunas-imagem">
+          <img src="{% static 'img/alimenticia/imagem1.png'%}">
+        </div>
+        <div class="colunas-imagem">
+          <img src="{% static 'img/alimenticia/imagem2.png'%}">
+        </div>
+        <div class="colunas-imagem">
+          <img src="{% static 'img/alimenticia/imagem3.png'%}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

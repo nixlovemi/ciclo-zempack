@@ -1,0 +1,298 @@
+/* banner */
+.banner-section {
+  background-image: url("../img/contato/banner.jpg");
+  background-size: 100%;
+  height: 23vw;
+}
+
+.banner-title {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #565655;
+  border-left: 4px solid #d00910;
+  padding-left: 47px;
+  line-height: 160%;
+  padding-top: 0px;
+}
+
+@media (max-width: 1199px) {
+  .banner-section {
+    background-size: 125%;
+    height: 28vw;
+  }
+  .banner-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-section {
+    background-size: 125%;
+    height: 28vw;
+  }
+  .banner-title {
+    font-size: 20px;
+  }
+}
+
+
+/* contato */
+.contato-section-spacer {
+  height: 40px;
+}
+
+.contato-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ededed;
+}
+
+.contato-form-title {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #565655;
+}
+
+.contato-form-text {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #565655;
+  padding-bottom: 10px;
+}
+
+.contato-form input {
+  line-height: 330%;
+}
+
+.contato-form textarea {
+  line-height: 175%;
+}
+
+.contato-form input,textarea {
+  border: 1px;
+  width: 80%;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ffffff;
+  font-family: 'AmsiProCond';
+}
+
+.contato-form-checkbox {
+  width: auto !important;
+}
+
+.contato-form-checkbox-text {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a:hover.contato-form-link,  a:visited.contato-form-link, a:link.contato-form-link, a:active.contato-form-link
+{
+  text-decoration: underline;
+}
+
+.contato-enviar-linha {
+  width: 100%;
+  padding-top: 15px;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.contato-enviar {
+  width: 80%;
+  font-size: 20px;
+  border: 1px;
+  border-style: solid;
+  padding: 12px;
+  background-color: #d00910;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contato-text-title {
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #565655;
+  padding-top: 60px;
+}
+
+.contato-text-phone {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #565655;
+}
+
+.contato-text-phone-big {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #565655;
+}
+
+.contato-text-email {
+  color: #565655;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.contato-text-mapa {
+  padding-top: 40px;
+  margin-left: -40px;
+}
+
+@media (max-width: 767px) {
+  .contato-text-mapa {
+    margin-left: 0px;
+  }
+  .contato-text-mapa > img {
+    width: 90%;
+  }
+  .contato-form input,textarea {
+    width: 100%;
+  }
+  .contato-enviar {
+    width: 100%;
+  }
+  .contato-text-padding {
+    font-size: 1px;
+  }
+}
+
+/* chamada */
+.chamada-section {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.chamada-title {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #d00910;
+  background-image: url(../img/white-detail.png);
+  background-color: #ededed;
+  background-position-x: left;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* colunas */
+.colunas-section {
+  padding-bottom: 80px;
+}
+
+.colunas-coluna-left{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.colunas-coluna-left > p, .colunas-coluna-left > p > a > strong{
+  font-family: 'AmsiProCond';
+  font-size: 17px;
+  line-height: 160%;
+}
+
+.colunas-especificacao > img {
+  width: 70%;
+}
+
+.colunas-coluna-right {
+  margin-top: -240px;
+}
+
+.colunas-imagem {
+  padding-bottom: 30px;
+}
+
+.colunas-imagem > img {
+  width: 90%;
+}
+
+.imagem1 {
+  width: 486px;
+  height: 404px;
+}
+
+@media (max-width: 991px) {
+  .colunas-coluna-left {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .colunas-coluna-right {
+    margin-top: 0px;
+  }
+  .colunas-imagem > img {
+    width: 100%;
+  }
+  .imagem1 {
+    height: auto;
+  }
+}
+
+/* send */
+
+.send-section {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.send-title {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #d00910;
+  background-image: url(../img/white-detail.png);
+  background-color: #ededed;
+  background-position-x: left;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.send-text {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #000000;
+  background-color: #ededed;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.send-text, .send-text > a > strong, .send-text > p, .send-text > p > a > strong{
+  font-family: 'AmsiProCond';
+  font-size: 17px;
+  line-height: 160%;
+}
+
+.send-luck {
+  font-size: 20px;
+  border: 1px;
+  border-style: solid;
+  padding: 6px;
+  background-color: #d00910;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  width: 100px;
+}

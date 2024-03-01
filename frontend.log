@@ -1,0 +1,34 @@
+[2024-02-29 23:04:28] INFO [django.utils.autoreload.run_with_reloader:668] Watching for file changes with StatReloader
+[2024-02-29 23:04:28] INFO [django.utils.autoreload.run_with_reloader:668] Watching for file changes with StatReloader
+[2024-02-29 23:08:28] INFO [django.utils.autoreload.run_with_reloader:668] Watching for file changes with StatReloader
+[2024-02-29 23:08:28] INFO [django.utils.autoreload.run_with_reloader:668] Watching for file changes with StatReloader
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET / HTTP/1.1" 200 18104
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/css/fonts-v1.css HTTP/1.1" 200 3742
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/css/home-v7.css HTTP/1.1" 200 7936
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/fslightbox/fslightbox.js HTTP/1.1" 200 30598
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/css/page-v2.css HTTP/1.1" 200 9110
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/negocio-jbs.png HTTP/1.1" 200 2261
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/logo.png HTTP/1.1" 200 2459
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/ciclo.png HTTP/1.1" 200 622
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/right.png HTTP/1.1" 200 232
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/right-white.png HTTP/1.1" 200 190
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/logo-footer.png HTTP/1.1" 200 2264
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/left.png HTTP/1.1" 200 287
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/unidade-jbs.png HTTP/1.1" 200 4534
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/white-detail.png HTTP/1.1" 200 151
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/home/chamada2.jpg HTTP/1.1" 200 52845
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/home/chamada3.jpg HTTP/1.1" 200 56026
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/home/chamada1.jpg HTTP/1.1" 200 90074
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/home/chamada4.jpg HTTP/1.1" 200 88125
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/css/fonts/BebasNeueRegular.woff2 HTTP/1.1" 200 16536
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/home/banner1.png HTTP/1.1" 200 182541
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/home/produto3.png HTTP/1.1" 200 51340
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/css/fonts/BebasNeueBold.woff2 HTTP/1.1" 200 22312
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/home/produto2.png HTTP/1.1" 200 104231
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/img/home/produto1.png HTTP/1.1" 200 129621
+[2024-02-29 23:08:44] INFO [django.server.log_message:212] "GET /static/css/fonts/BebasNeueLight.woff2 HTTP/1.1" 200 17688
+[2024-02-29 23:08:45] INFO [django.server.log_message:212] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 641
+[2024-02-29 23:08:56] INFO [django.server.log_message:212] "GET /static/img/home/banner2.png HTTP/1.1" 200 322556
+[2024-02-29 23:09:01] INFO [django.server.log_message:212] "GET /static/img/home/banner3.png HTTP/1.1" 200 894726
+[2024-02-29 23:09:01] INFO [django.server.log_message:212] "GET /static/css/fonts/AmsiProCond-Regular.woff2 HTTP/1.1" 200 36152
+[2024-02-29 23:09:06] INFO [django.server.log_message:212] "GET /static/img/home/banner4.png HTTP/1.1" 200 421764
